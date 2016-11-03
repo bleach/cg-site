@@ -5,7 +5,7 @@ menu:
 title: Deploying Flask
 ---
 
-***See also: the [official Python buildpack documentation](http://docs.cloudfoundry.org/buildpacks/python/).***
+**See also: the [official Python buildpack documentation](http://docs.cloudfoundry.org/buildpacks/python/).**
 
 Deploying a Flask app is similar to deploying a Django app but is a bit simpler.
 
