@@ -20,8 +20,6 @@ cf create-user ORGNAME_deployer RANDOM-PASSWORD
 cf set-space-role ORGNAME_deployer ORG SPACE SpaceDeveloper
 ```
 
-***
-
 Depending on your CI system the setup is going to be a bit different. **For all cases you will need a `manifest.yml` file.**
 
 ### Travis
@@ -66,7 +64,6 @@ deploy:
 - [Travis - Cloud Foundry Deployment](http://docs.travis-ci.com/user/deployment/cloudfoundry/)
 - [Travis - The Lifecycle of a Travis CI Build](http://docs.travis-ci.com/user/build-lifecycle/)
 
-***
 
 ### CircleCI
 
@@ -94,7 +91,6 @@ Replace `DEPLOYER_USER`, `ORG`, and `SPACE` accordingly and export the `CF_PASS`
 
 **Note**: if your `manifest.yml` describes more than one app you might want to specify which app to push in the `cf push` line.
 
-***
 
 ### Wercker
 
@@ -134,5 +130,3 @@ And setup the following environment variables in a "deploy target":
 
 
 You can also add the `alt_appname` attribute to do [Blue-Green deploys](http://docs.pivotal.io/pivotalcf/devguide/deploy-apps/blue-green.html).
-
-***
